@@ -1,0 +1,24 @@
+{
+  "name": "@ys/shared",
+  "type": "module",
+  "version": "1.0.0",
+  "packageManager": "pnpm@10.17.0",
+  "description": "",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "require": "./dist/index.js"
+    }
+  },
+  "scripts": {
+    "lint": "eslint . --fix",
+    "dev": "tsdown --watch",
+    "build": "tsdown"
+  },
+  "dependencies": {
+    "@ys/eslint-config": "workspace:*",
+    "drizzle-orm": "^0.44.5",
+    "drizzle-zod": "^0.8.3"
+  }
+}
