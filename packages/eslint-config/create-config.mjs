@@ -1,6 +1,6 @@
 import antfu from '@antfu/eslint-config'
 
-export function createConfig(options) {
+export function createConfig(options, userConfig = []) {
   return antfu({
     type: 'app',
     typescript: true,
@@ -12,5 +12,5 @@ export function createConfig(options) {
       }],
     },
     ...options,
-  })
+  }, ...userConfig)
 }
