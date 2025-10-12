@@ -11,6 +11,15 @@ export function createConfig(options, userConfig = []) {
         tsconfigRootDir: '.',
       }],
     },
+    ignores: [
+      '**/.gitignore',
+      '**/.prettierignore',
+      '**/.prettierrc',
+      '**/pnpm-lock.yaml',
+      '**/dist/**',
+      '**/build/**',
+      'node_modules/**',
+    ],
     ...options,
   }, ...userConfig)
 }
