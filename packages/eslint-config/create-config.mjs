@@ -12,13 +12,8 @@ export function createConfig(options, userConfig = []) {
       }],
     },
     ignores: [
-      '**/.gitignore',
-      '**/.prettierignore',
-      '**/.prettierrc',
-      '**/pnpm-lock.yaml',
-      '**/dist/**',
-      '**/build/**',
-      'node_modules/**',
+      'apps/api/**/*',
+      'pnpm.lock.yaml',
     ],
     ...options,
   }, ...userConfig)
