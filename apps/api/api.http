@@ -1,0 +1,7 @@
+@uri=http://localhost:3000/api/v1
+
+###
+GET {{uri}}
+
+###
+GET {{uri}}/hello

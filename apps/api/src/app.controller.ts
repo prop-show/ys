@@ -12,7 +12,7 @@ export class AppController {
   }
 
   @Get('hello')
-  getHello2(): string {
-    return 'Hello 你好';
+  getHello2() {
+    return { data: 'Hello 你好', extra: { page: 1, total: 100, pageSize: 10 } };
   }
 }
