@@ -1,3 +1,4 @@
+import type { IResponse } from '@ys/shared';
 import type { Request, Response } from 'express';
 
 import {
@@ -7,8 +8,6 @@ import {
   HttpException,
   HttpStatus,
 } from '@nestjs/common';
-
-import { IResponse } from '../../types/response.type';
 
 @Catch()
 export class BaseExceptionFilter implements ExceptionFilter {

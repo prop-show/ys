@@ -1,7 +1,7 @@
+import type { IResponse, IResponseWithExtra } from '@ys/shared';
+
 import { CallHandler, NestInterceptor } from '@nestjs/common';
 import { map, Observable } from 'rxjs';
-
-import { IResponse, IResponseWithExtra } from '../../types/response.type';
 
 export class TransformInterceptor<T = any>
   implements NestInterceptor<T, IResponse<T>>
