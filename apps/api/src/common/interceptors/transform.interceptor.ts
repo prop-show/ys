@@ -1,17 +1,7 @@
 import { CallHandler, NestInterceptor } from '@nestjs/common';
 import { map, Observable } from 'rxjs';
-interface IResponse<T> {
-  data: T;
-  extra: Record<string, any>;
-  code: number;
-  message: string;
-  success: boolean;
-}
 
-interface IResponseWithExtra<T, E = Record<string, any>> {
-  data: T;
-  extra: E;
-}
+import { IResponse, IResponseWithExtra } from '../../types/response.type';
 
 export class TransformInterceptor<T = any>
   implements NestInterceptor<T, IResponse<T>>

@@ -3,6 +3,7 @@ import { NestFactory } from '@nestjs/core';
 import { NestExpressApplication } from '@nestjs/platform-express';
 
 import { AppModule } from './app.module';
+import { BaseExceptionFilter } from './common/exception/base.exception';
 import { TransformInterceptor } from './common/interceptors';
 import { setupSwagger } from './common/utils/setup-swagger';
 
@@ -15,6 +16,7 @@ async function bootstrap() {
   app.enableVersioning({ type: VersioningType.URI, defaultVersion: '1' });
 
   app.useGlobalInterceptors(new TransformInterceptor());
+  app.useGlobalFilters(new BaseExceptionFilter());
 
   const port = Number(process.env.PORT || 3000);
   setupSwagger(app, port);

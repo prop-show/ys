@@ -13,6 +13,7 @@ export class AppController {
 
   @Get('hello')
   getHello2() {
-    return { data: 'Hello 你好', extra: { page: 1, total: 100, pageSize: 10 } };
+    throw new Error('故意的错误');
+    // return { data: 'Hello 你好', extra: { page: 1, total: 100, pageSize: 10 } };
   }
 }
