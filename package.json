@@ -8,6 +8,7 @@
   "keywords": [],
   "main": "index.js",
   "scripts": {
+    "postinstall": "npx simple-git-hooks",
     "lint": "pnpm -r lint",
     "build": "pnpm -r build"
   },
