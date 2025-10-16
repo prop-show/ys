@@ -1,16 +1,18 @@
 {
   "name": "@ys/shared",
-  "type": "module",
   "version": "1.0.0",
   "packageManager": "pnpm@10.17.0",
   "description": "",
   "exports": {
     ".": {
       "types": "./dist/index.d.ts",
-      "import": "./dist/index.js",
+      "import": "./dist/index.mjs",
       "require": "./dist/index.js"
     }
   },
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
   "scripts": {
     "lint": "eslint . --fix",
     "dev": "tsdown --watch",
@@ -18,7 +20,7 @@
   },
   "dependencies": {
     "@ys/eslint-config": "workspace:*",
-    "drizzle-orm": "^0.44.5",
-    "drizzle-zod": "^0.8.3"
+    "drizzle-orm": "catalog:",
+    "drizzle-zod": "catalog:"
   }
 }
