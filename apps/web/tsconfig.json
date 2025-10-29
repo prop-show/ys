@@ -1,0 +1,11 @@
+{
+  "compilerOptions": {
+    "types": ["unplugin-vue-router/client"]
+
+  },
+  "references": [
+    { "path": "./tsconfig.app.json" },
+    { "path": "./tsconfig.node.json" }
+  ],
+  "files": []
+}
