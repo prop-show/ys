@@ -1,12 +1,16 @@
-import ui from '@nuxt/ui/vue-plugin'
 import { createApp } from 'vue'
 
 import '@/assets/main.css'
 
 import App from './App.vue'
-import router from './router'
+import { setupPlugins } from './plugins'
 
-createApp(App)
-  .use(router)
-  .use(ui)
-  .mount('#app')
+function bootstrap() {
+  const app = createApp(App)
+
+  setupPlugins(app)
+
+  app.mount('#app')
+}
+
+bootstrap()

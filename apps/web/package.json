@@ -12,7 +12,11 @@
   "dependencies": {
     "@nuxt/ui": "catalog:",
     "@tailwindcss/vite": "catalog:",
+    "@tanstack/vue-query": "catalog:",
     "@vitejs/plugin-vue-jsx": "catalog:",
+    "dayjs": "catalog:",
+    "pinia": "catalog:",
+    "pinia-plugin-persistedstate": "catalog:",
     "tailwindcss": "catalog:",
     "vue": "catalog:",
     "vue-router": "catalog:"
