@@ -5,12 +5,16 @@ packages:
 catalog:
   '@nuxt/ui': ^4.1.0
   '@tailwindcss/vite': ^4.1.17
+  '@tanstack/vue-query': ^5.90.2
   '@types/node': ^24.10.0
   '@vitejs/plugin-vue': ^6.0.1
   '@vitejs/plugin-vue-jsx': ^5.1.1
   '@vue/tsconfig': ^0.8.1
+  dayjs: ^1.11.19
   drizzle-orm: ^0.44.5
   drizzle-zod: ^0.8.3
+  pinia: ^3.0.4
+  pinia-plugin-persistedstate: ^4.7.1
   rollup-plugin-visualizer: ^6.0.5
   tailwindcss: ^4.1.17
   typescript: ~5.9.3

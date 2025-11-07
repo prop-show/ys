@@ -25,7 +25,6 @@
     "vue-sonner": "^2.0.8"
   },
   "devDependencies": {
-    "@tanstack/eslint-plugin-query": "^5.90.1",
-    "@types/axios": "^0.14.4"
+    "@tanstack/eslint-plugin-query": "^5.90.1"
   }
 }
