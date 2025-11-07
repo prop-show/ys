@@ -175,6 +175,9 @@ importers:
       '@vitejs/plugin-vue-jsx':
         specifier: ^5.1.1
         version: 5.1.1(vite@7.2.2(@types/node@24.10.0)(jiti@2.6.1)(lightningcss@1.30.2)(terser@5.44.0)(tsx@4.20.6)(yaml@2.8.1))(vue@3.5.23(typescript@5.9.3))
+      '@ys/eslint-config':
+        specifier: workspace:*
+        version: link:../../packages/eslint-config
       tailwindcss:
         specifier: ^4.1.17
         version: 4.1.17
