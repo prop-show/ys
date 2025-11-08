@@ -266,6 +266,9 @@ importers:
       '@vue/tsconfig':
         specifier: 'catalog:'
         version: 0.8.1(typescript@5.9.3)(vue@3.5.23(typescript@5.9.3))
+      '@ys/eslint-config':
+        specifier: workspace:*
+        version: link:../../packages/eslint-config
       rollup-plugin-visualizer:
         specifier: 'catalog:'
         version: 6.0.5(rolldown@1.0.0-beta.47)(rollup@4.52.5)
@@ -311,9 +314,6 @@ importers:
       '@ys/eslint-config':
         specifier: workspace:*
         version: link:../eslint-config
-      '@ys/shared':
-        specifier: workspace:*
-        version: link:../shared
       axios:
         specifier: ^1.12.2
         version: 1.12.2
@@ -330,6 +330,9 @@ importers:
       '@tanstack/eslint-plugin-query':
         specifier: ^5.90.1
         version: 5.90.1(eslint@9.39.1(jiti@2.6.0))(typescript@5.9.3)
+      '@ys/shared':
+        specifier: workspace:*
+        version: link:../shared
 
   packages/shared:
     dependencies:

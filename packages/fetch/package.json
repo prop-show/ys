@@ -18,13 +18,13 @@
     "@tanstack/vue-query": "^5.90.2",
     "@vueuse/core": "^13.9.0",
     "@ys/eslint-config": "workspace:*",
-    "@ys/shared": "workspace:*",
     "axios": "^1.12.2",
     "vue": "^3.5.22",
     "vue-router": "^4.5.1",
     "vue-sonner": "^2.0.8"
   },
   "devDependencies": {
-    "@tanstack/eslint-plugin-query": "^5.90.1"
+    "@tanstack/eslint-plugin-query": "^5.90.1",
+    "@ys/shared": "workspace:*"
   }
 }

@@ -25,6 +25,7 @@
     "@types/node": "catalog:",
     "@vitejs/plugin-vue": "catalog:",
     "@vue/tsconfig": "catalog:",
+    "@ys/eslint-config": "workspace:*",
     "rollup-plugin-visualizer": "catalog:",
     "typescript": "catalog:",
     "unplugin-auto-import": "catalog:",
