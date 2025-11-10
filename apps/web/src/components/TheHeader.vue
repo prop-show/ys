@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { ref } from 'vue';
+import { ref } from 'vue'
 
 const items = ref([
   {
@@ -17,9 +17,9 @@ const items = ref([
     icon: 'i-simple-icons-github',
     badge: '3.8k',
     to: 'https://github.com/nuxt/ui',
-    target: '_blank'
+    target: '_blank',
   },
-  
+
 ])
 </script>
 

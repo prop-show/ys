@@ -1,12 +1,12 @@
-<template>
-  <div>
-about
-  </div>
-</template>
-
 <script lang="ts" setup>
 
 </script>
+
+<template>
+  <div>
+    about
+  </div>
+</template>
 
 <style>
 
