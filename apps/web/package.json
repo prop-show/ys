@@ -33,6 +33,7 @@
     "unplugin-vue-router": "catalog:",
     "vite": "catalog:",
     "vite-plugin-vue-devtools": "catalog:",
+    "vite-plugin-vue-layouts": "^0.11.0",
     "vue-tsc": "catalog:"
   }
 }

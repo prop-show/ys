@@ -10,6 +10,7 @@ import { visualizer } from 'rollup-plugin-visualizer'
 import VueRouter from 'unplugin-vue-router/vite'
 import { defineConfig } from 'vite'
 import VueDevtools from 'vite-plugin-vue-devtools'
+import Layouts from 'vite-plugin-vue-layouts'
 
 const RouteGenerateExclude = ['**/components/**', '**/layouts/**', '**/data/**', '**/types/**']
 // https://vite.dev/config/
@@ -22,6 +23,9 @@ export default defineConfig({
     vue(),
     tailwindcss(),
     ui(),
+    Layouts({
+      defaultLayout: 'default',
+    }),
     // AutoImport({
     //   include: [/\.[tj]sx?$/, /\.vue$/, /\.md$/],
     //   imports: ['vue', 'vue-router', VueRouterAutoImports],
