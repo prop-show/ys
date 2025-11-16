@@ -1,5 +1,3 @@
-import type { z } from 'zod'
-
 import { pgTable, serial, varchar } from 'drizzle-orm/pg-core'
 import { createInsertSchema, createSelectSchema, createUpdateSchema } from 'drizzle-zod'
 
@@ -14,8 +12,8 @@ export const user = pgTable('user', {
 })
 
 export const UserSelectSchema = createSelectSchema(user)
-export type UserSelect = z.infer<typeof UserSelectSchema>
+export type UserSelect = typeof user.$inferSelect
 export const UserInsertSchema = createInsertSchema(user)
-export type UserInsert = z.infer<typeof UserInsertSchema>
+export type UserInsert = typeof user.$inferInsert
 export const UserUpdateSchema = createUpdateSchema(user)
-export type UserUpdate = z.infer<typeof UserUpdateSchema>
+export type UserUpdate = Partial<UserInsert>

@@ -5,8 +5,8 @@
   "description": "前端公用的请求库",
   "exports": {
     ".": {
-      "types": "./dist/index.d.ts",
-      "import": "./dist/index.js"
+      "types": "./dist/index.d.mts",
+      "import": "./dist/index.mjs"
     }
   },
   "scripts": {
@@ -15,16 +15,16 @@
     "build": "tsdown"
   },
   "dependencies": {
-    "@tanstack/vue-query": "^5.90.2",
-    "@vueuse/core": "^13.9.0",
+    "@tanstack/vue-query": "catalog:",
+    "@vueuse/core": "catalog:",
     "@ys/eslint-config": "workspace:*",
-    "axios": "^1.12.2",
-    "vue": "^3.5.22",
-    "vue-router": "^4.5.1",
-    "vue-sonner": "^2.0.8"
+    "axios": "catalog:",
+    "vue": "catalog:",
+    "vue-router": "catalog:",
+    "vue-sonner": "catalog:"
   },
   "devDependencies": {
-    "@tanstack/eslint-plugin-query": "^5.90.1",
+    "@tanstack/eslint-plugin-query": "catalog:",
     "@ys/shared": "workspace:*"
   }
 }

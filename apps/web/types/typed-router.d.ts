@@ -51,6 +51,13 @@ declare module 'vue-router/auto-routes' {
       Record<never, never>,
       | never
     >,
+    '/task/': RouteRecordInfo<
+      '/task/',
+      '/task',
+      Record<never, never>,
+      Record<never, never>,
+      | never
+    >,
     '/test': RouteRecordInfo<
       '/test',
       '/test',
@@ -93,6 +100,12 @@ declare module 'vue-router/auto-routes' {
     'src/pages/auth/login.vue': {
       routes:
         | '/auth/login'
+      views:
+        | never
+    }
+    'src/pages/task/index.vue': {
+      routes:
+        | '/task/'
       views:
         | never
     }

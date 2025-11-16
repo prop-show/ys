@@ -8,7 +8,7 @@ import { useAxios } from './use-axios'
 export function useGetUserListQuery() {
   const { axiosInstance } = useAxios()
 
-  return useQuery<AxiosError, UserSelect[]>({
+  return useQuery<UserSelect[], AxiosError>({
     queryKey: ['user-list'],
     queryFn: async () => {
       const response = await axiosInstance.get('/users')
@@ -20,7 +20,7 @@ export function useGetUserListQuery() {
 export function useGetUserInfoQuery(id: number) {
   const { axiosInstance } = useAxios()
 
-  return useQuery({
+  return useQuery<UserSelect, AxiosError>({
     queryKey: ['user-info', id],
     queryFn: async () => {
       const response = await axiosInstance.get(`/users/${id}`)
@@ -33,7 +33,7 @@ export function useCreateUserMutation() {
   const { axiosInstance } = useAxios()
   const queryClient = useQueryClient()
 
-  return useMutation<AxiosError, boolean, UserInsert>({
+  return useMutation<boolean, AxiosError, UserInsert>({
     mutationFn: async (data) => {
       const response = await axiosInstance.post('/users', data)
 
@@ -49,7 +49,7 @@ export function useUpdateUserMutation(id: number) {
   const { axiosInstance } = useAxios()
   const queryClient = useQueryClient()
 
-  return useMutation<AxiosError, boolean, UserUpdate>({
+  return useMutation<boolean, AxiosError, UserUpdate>({
     mutationFn: async (data) => {
       const response = await axiosInstance.put(`/users/${id}`, data)
 
@@ -65,7 +65,7 @@ export function useDeleteUserMutation(id: number) {
   const { axiosInstance } = useAxios()
   const queryClient = useQueryClient()
 
-  return useMutation<AxiosError, boolean, void>({
+  return useMutation<boolean, AxiosError, void>({
     mutationFn: async () => {
       const response = await axiosInstance.delete(`/users/${id}`)
 
