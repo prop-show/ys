@@ -1,8 +1,8 @@
 <script lang="ts" setup>
-import type { TaskSelect } from '@ys/shared';
+import type { TaskSelect } from '@ys/shared'
 
-import { useDeleteTaskMutation } from '@ys/fetch';
-import { computed, unref } from 'vue';
+import { useDeleteTaskMutation } from '@ys/fetch'
+import { computed, unref } from 'vue'
 
 const props = defineProps<{
   task: TaskSelect
